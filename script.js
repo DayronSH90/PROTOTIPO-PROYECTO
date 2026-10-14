@@ -36,7 +36,7 @@ const memoryPhotos = [
 
 // Frase profunda, romántica y melancólica tras la última foto individual
 const finalSadRomanticLine = "A veces me da miedo lo rápido que pasa el tiempo… pero si el tiempo vuela, quiero que sea siempre a tu lado, guardando cada uno de estos recuerdos en el alma. ✨";
-const finalSadRomanticLine =  "Feliz cumpleaños, mi dadita hermosa. Te amo con absolutamente todo mi corazón ❤️",
+const finalSadRomanticLine =  "Feliz cumpleaños, mi dadita hermosa. Te amo con absolutamente todo mi corazón ❤️";
 
 const msg = document.getElementById("message");
 const memoryContainer = document.getElementById("memory-container");
