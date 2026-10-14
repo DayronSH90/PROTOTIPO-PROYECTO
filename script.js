@@ -10,7 +10,8 @@ const lines = [
   "Deseo de todo corazón que este nuevo año de vida te abra las puertas a tanta felicidad como la que tú causas en mi",
   "Si volviera a nacer, o si el destino me diera a elegir mil veces más en qué universo vivir...",
   "te volvería a buscar y a elegir a ti, sin pensarlo ni un solo segundo, porque eres mi persona favorita",
-  "Y para recordar un poquito de lo mucho que hemos construido juntos..."
+  "Y para recordar un poquito de lo mucho que hemos construido juntos...",
+  "Feliz cumpleaños, mi dadita hermosa. Te amo con absolutamente todo mi corazón ❤️"
 ];
 
 // Lista de fotos individuales que pasan una por una
@@ -36,7 +37,6 @@ const memoryPhotos = [
 
 // Frase profunda, romántica y melancólica tras la última foto individual
 const finalSadRomanticLine = "A veces me da miedo lo rápido que pasa el tiempo… pero si el tiempo vuela, quiero que sea siempre a tu lado, guardando cada uno de estos recuerdos en el alma. ✨";
-const finalSadRomanticLine =  "Feliz cumpleaños, mi dadita hermosa. Te amo con absolutamente todo mi corazón ❤️";
 
 const msg = document.getElementById("message");
 const memoryContainer = document.getElementById("memory-container");
