@@ -1,16 +1,15 @@
 // Dedicatoria extensa de cumpleaños
 const lines = [
   "Hay días en el año que se sienten mágicos e incomparables…",
-  "pero hoy es el día más especial y hermoso de todos porque es tu cumpleaños, mi adorada Antonela.",
-  "Desde el preciso instante en que llegaste a mi vida, cada rincón de mi mundo cambió por completo.",
-  "Hasta los días más grises o sencillos se convirtieron de repente en destellos llenos de una luz única.",
-  "Como el Principito cuidaba con todo su amor, paciencia y devoción a su pequeña rosa en aquel asteroide,",
-  "así quiero pasar el resto de mis días celebrándote, cuidándote y agradeciéndole al universo por tu hermosa existencia.",
-  "Eres mi paz más sincera, mi sonrisa favorita en las mañanas y el regalo más maravilloso que la vida me pudo dar.",
-  "Deseo de todo corazón que este nuevo año de vida te abra las puertas a tanta felicidad como la que tú regalas a todos.",
+  "pero hoy es el día más especial y hermoso de todos porque es una fecha muy especial, para ti mi Anto",
+  "Desde el preciso instante en que llegaste a mi vida, cada rincón de mi mundo cambió por completo",
+  "Hasta los días más grises o sencillos se convirtieron de repente en destellos llenos de una luz única",
+  "Como el Principito cuidaba con todo su amor, paciencia a su pequeña rosa en aquel asteroide",
+  "así quiero pasar el resto de mis días, cuidándote y agradeciéndole al universo por tu hermosa existencia",
+  "Eres mi paz más sincera, mi sonrisa favorita en las mañanas y el regalo más maravilloso que la vida me pudo dar",
+  "Deseo de todo corazón que este nuevo año de vida te abra las puertas a tanta felicidad como la que tú causas en mi",
   "Si volviera a nacer, o si el destino me diera a elegir mil veces más en qué universo vivir...",
-  "te volvería a buscar y a elegir a ti, sin pensarlo ni un solo segundo, porque eres mi persona favorita.",
-  "Feliz cumpleaños, mi dadita hermosa. Te amo con absolutamente todo mi corazón. ❤️",
+  "te volvería a buscar y a elegir a ti, sin pensarlo ni un solo segundo, porque eres mi persona favorita",
   "Y para recordar un poquito de lo mucho que hemos construido juntos..."
 ];
 
@@ -37,6 +36,7 @@ const memoryPhotos = [
 
 // Frase profunda, romántica y melancólica tras la última foto individual
 const finalSadRomanticLine = "A veces me da miedo lo rápido que pasa el tiempo… pero si el tiempo vuela, quiero que sea siempre a tu lado, guardando cada uno de estos recuerdos en el alma. ✨";
+const finalSadRomanticLine =  "Feliz cumpleaños, mi dadita hermosa. Te amo con absolutamente todo mi corazón ❤️",
 
 const msg = document.getElementById("message");
 const memoryContainer = document.getElementById("memory-container");
