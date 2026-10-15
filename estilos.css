@@ -46,7 +46,7 @@ body {
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  padding: 8vh 20px 0;
+  padding: 2vh 20px 0;
   position: relative;
   background: radial-gradient(
     ellipse at 50% 72%,
@@ -82,6 +82,9 @@ body {
 }
 
 .message {
+  position: absolute;
+  top: 25%;
+  transform: translate(-50%, -50%)translateY(10px);
   z-index: 2;
   min-height: 100px;
   display: flex;
@@ -99,7 +102,7 @@ body {
 
 .message.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) translateX(-50%, -50%) traslateY(0);
 }
 
 /* Contenedor de fotos individuales (recordando momentos) */
@@ -126,27 +129,35 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
-  border: 2px solid rgba(246, 240, 232, 0.4);
+  border: 2px solid rgba(0,0,0,0.8);
   box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+/* Contenedor principal de la galería final */
+.gallery-wrapper {
+  position: relative;
+  z-index: 5;
+  width: min(92vw, 550px);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  margin-top: -140px;
+  transition: opacity 1.5s ease;
+}
+
+.gallery-wrapper.show {
+  display: flex;
+  opacity: 1;
 }
 
 /* Cuadro final de galería (4 columnas x 4 filas con espacio) */
 .gallery-grid {
-  position: absolute;
-  top: 8vh;
-  z-index: 5;
-  width: min(92vw, 650px);
-  display: none;
+  width: 100%;
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 12px;
-  opacity: 0;
-  transition: opacity 1.5s ease;
-}
-
-.gallery-grid.show {
-  display: grid;
-  opacity: 1;
+  gap: 8px;
 }
 
 .gallery-item {
@@ -170,6 +181,41 @@ body {
   transform: scale(1.1);
 }
 
+/* Frase romántica sobre las fotos (dura 5s) */
+.gallery-title {
+  margin-top: 10px;
+  font-size: clamp(15px, 3.5vw, 20px);
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  color: #f4f0e9;
+  padding: 0 10px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.gallery-title.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Texto final de cierre */
+.to-be-continued {
+  margin-top: 4px;
+  font-size: clamp(16px, 3.8vw, 22px);
+  font-style: italic;
+  letter-spacing: 0.08em;
+  color: #f4f0e9;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.to-be-continued.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @keyframes popIn {
   to {
     transform: scale(1);
@@ -185,7 +231,17 @@ body {
   mix-blend-mode: screen;
   filter: contrast(1.08);
   margin-top: auto;
-  transition: opacity 1s;
+  transition: all 1.2s ease-in-out;
+}
+
+/* Estilo para que el Principito aparezca pequeño abajo */
+.scene.small-scene {
+  position: relative;
+  z-index: 6;
+  width: min(35vw, 130px) !important;
+  margin: 0px auto 2px auto !important;
+  opacity: 0.95;
+  display: block !important;
 }
 
 .footer {
@@ -193,7 +249,7 @@ body {
   font-size: 13px;
   letter-spacing: 0.16em;
   color: #a8a5a0;
-  margin: 18px 0 28px;
+  margin: 10px 0 20px;
 }
 
 .intro button {
@@ -242,16 +298,4 @@ body {
 .intro.hide {
   opacity: 0;
   pointer-events: none;
-}
-
-@media (max-height: 650px) {
-  .stage {
-    padding-top: 5vh;
-  }
-  .message {
-    min-height: 75px;
-  }
-  .scene {
-    width: min(75vw, 400px);
-  }
 }
