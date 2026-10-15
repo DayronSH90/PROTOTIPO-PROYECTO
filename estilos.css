@@ -83,7 +83,7 @@ body {
 
 .message {
   position: absolute;
-  top: 25%;
+  top: 15%;
   transform: translate(-50%, -50%)translateY(10px);
   z-index: 2;
   min-height: 100px;
