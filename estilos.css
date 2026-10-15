@@ -19,7 +19,7 @@ body {
   z-index: 20;
   background: rgba(17, 17, 17, 0.7);
   border: 1px solid #a9a39a;
-  color: #f6f0e8;
+  color: hsl(300, 44%, 94%);
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -83,7 +83,7 @@ body {
 
 .message {
   position: absolute;
-  top: 15%;
+  top: 35%;
   transform: translate(-50%, -50%)translateY(10px);
   z-index: 2;
   min-height: 100px;
